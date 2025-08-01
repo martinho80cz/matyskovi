@@ -6,13 +6,18 @@
   <title>Romča a Tom se vzali 💍</title>
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #fffaf5;
-      color: #333;
-      line-height: 1.6;
-    }
+	body {
+	  margin: 0;
+	  font-family: 'Segoe UI', sans-serif;
+	  background: #fffaf5;
+	  color: #333;
+	  line-height: 1.6;
+	  overflow-x: hidden; /* ✅ Zabrání horizontálnímu scrollu */
+	}
+	html {
+	  overflow-x: hidden; /* ✅ i pro root element */
+	}
+	
     header {
       background: #C2E8F4;
       color: white;
@@ -67,6 +72,8 @@
       height: 300px;
       border: 0;
       border-radius: 10px;
+	  max-width: 100%;
+	  display: block;
     }
 
     .faq {
